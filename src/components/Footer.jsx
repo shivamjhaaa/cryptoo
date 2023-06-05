@@ -1,37 +1,22 @@
-import { Avatar, Box, Stack, Text, VStack } from "@chakra-ui/react";
-import React from "react";
-
-const avatarSrc = "https://avatars.githubusercontent.com/u/109259263";
-
-const Footer = () => {
+function Footer() {
   return (
-    <Box
-      bgColor={"blackAlpha.900"}
-      color={"whiteAlpha.700"}
-      minH={"48"}
-      px={"16"}
-      py={["16", "8"]}
-    >
-      <Stack direction={["column", "row"]} h={"full"} alignItems={"center"}>
-        <VStack w={"full"} alignItems={["center", "flex-start"]}>
-          <Text fontWeight={"bold"}>About Us</Text>
-          <Text
-            fontSize={"sm"}
-            letterSpacing={"widest"}
-            textAlign={["center", "left"]}
-          >
-            We are the best crypto trading app in India, we provide our guidance
-            at a very cheap price.
-          </Text>
-        </VStack>
-
-        <VStack>
-          <Avatar boxSize={"28"} mt={["4", "0"]} src={avatarSrc} />
-          <Text>Our Founder</Text>
-        </VStack>
-      </Stack>
-    </Box>
+    <>
+      <footer>
+        <div className="footer-content">
+          <div className="footer-content__socials">
+            <i className="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-discord"></i>
+            <i className="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-youtube"></i>
+          </div>
+          <div className="footer-content__text">
+            <p>Privacy</p>
+            <p>Terms of Use</p>
+          </div>
+        </div>
+      </footer>
+    </>
   );
-};
+}
 
 export default Footer;
